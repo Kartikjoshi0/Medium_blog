@@ -7,14 +7,22 @@ import { SideBar } from "../../components/SideBar"
 import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 
+interface Post {
+    id: string;
+    title: string;
+    content: string;
+    author: {
+      Name: string;
+    };
+  }
 
-export default  function Page(): any{
+export default  function Page(): JSX.Element{
   const session =useSession()
   const router=useRouter()
   if(!session.data){
     router.push('/')
   }
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<Post[]>([]);
   useEffect(() => {
       async function fetchPosts() {
           try {
