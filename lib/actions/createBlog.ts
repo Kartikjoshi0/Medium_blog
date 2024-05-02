@@ -27,3 +27,4 @@ export async function createBlog(title: string, desc: string)  {
     }
         
 }
+export default createBlog

@@ -28,7 +28,7 @@ export function CreateBlog(){
         router.push('/home')
     }}>Create</ Button>
  </div> 
-    </div>
+  </div>
 }
 
 
