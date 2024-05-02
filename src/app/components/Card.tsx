@@ -10,7 +10,7 @@ export function Card({date,title,desc,authorName}: BlogProp){
     <div className="flex items-center gap-4">
         
       <div>
-        <span className="font-extralight">{'kai'}</span> · <span className="font-thin text-slate-600">{date}</span>
+        <span className="font-extralight">{authorName}</span> · <span className="font-thin text-slate-600">{date}</span>
       </div>
     </div>
     <div className="text-xl font-bold pt-4">{title}</div>

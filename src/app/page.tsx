@@ -48,12 +48,12 @@ export default function Page(){
       <div className="font-semibold m-4">Trending on Medium
        </div>
       <div className="grid grid-cols-2">
-      <Card  author='kai' title="let go " id="1" desc={"exited to be here"} date={"12 hours ago"} />
-      <Card  author='max' title="tesla" id="1" desc={"cyber truck is superb "} date={"8 hours ago "} />
-      <Card  author='kaven' title="save me" id="1" desc={"save the environment"} date={"4 hours ago"} />
-      <Card  author='shibam' title="dm" id="1" desc={"Dm me ,job for freshers  "} date={"29 min ago"} />
-      <Card  author='kaven' title="save me" id="1" desc={"save the environment"} date={"4 min ago"} />
-      <Card  author='shivam' title="dm" id="1" desc={"Dm me ,job for freshers  "} date={"29 min ago"} />
+      <Card  authorName='kai' title="let go "  desc={"exited to be here"} date={"12 hours ago"} />
+      <Card  authorName='max' title="tesla" desc={"cyber truck is superb "} date={"8 hours ago "} />
+      <Card  authorName='kaven' title="save me" desc={"save the environment"} date={"4 hours ago"} />
+      <Card  authorName='shibam' title="dm"  desc={"Dm me ,job for freshers  "} date={"29 min ago"} />
+      <Card  authorName='kaven' title="save me" desc={"save the environment"} date={"4 min ago"} />
+      <Card  authorName='shivam' title="dm"  desc={"Dm me ,job for freshers  "} date={"29 min ago"} />
     </div>
   </div>
   <div className="grid grid-cols-2">

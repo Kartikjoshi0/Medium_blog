@@ -1,9 +1,7 @@
 import { PrismaClient } from '@prisma/client'
-
 import CredentialsProvider from "next-auth/providers/credentials"
 import bcrypt from 'bcrypt'
-import { pages } from 'next/dist/build/templates/app-page'
-import { signIn } from 'next-auth/react'
+
 const prisma = new PrismaClient()
 
 export const authOptions = {
