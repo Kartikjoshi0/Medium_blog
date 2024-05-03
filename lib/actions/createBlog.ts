@@ -1,11 +1,12 @@
 "use server"
 import { getServerSession } from "next-auth"
 import { authOptions } from "./auth"
-import { PrismaClient } from '@prisma/client'
+import prisma from '../../prisma/index'
+
 
 
 export async function createBlog(title: string, desc: string)  {
-    const prisma = new PrismaClient()
+    
     const session = await getServerSession(authOptions)
     if(!session?.user ){
         console.log("not allowed");

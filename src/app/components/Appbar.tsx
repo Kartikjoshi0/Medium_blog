@@ -1,6 +1,5 @@
 import { useRouter } from "next/navigation";
 import { Button } from "./Buttons"
-import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 interface AppbarProps {
     user?: {
