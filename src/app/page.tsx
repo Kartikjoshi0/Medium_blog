@@ -5,7 +5,6 @@ import HomeCard from "./components/HomeCard";
 import { Card } from "./components/Card";
 import Signin from "./components/Signin";
 import Quote from "./components/Quote";
-import { Button } from "./components/Buttons";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 export default function Page(){

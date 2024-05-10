@@ -15,7 +15,7 @@ export async function GET(req: NextRequest,res: NextResponse) {
       return NextResponse.json(posts);
     } catch (error) {
       console.error("Error retrieving posts:", error);
-      NextResponse.json({ error: "Error retrieving posts" });
+      return NextResponse.json({ error: "Error retrieving posts" });
     }
   }
 }

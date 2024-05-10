@@ -19,17 +19,16 @@ interface Post {
 export default  function Page(): JSX.Element{
   const session =useSession()
   const router=useRouter()
-  if(!session.data){
-    router.push('/')
-  }
+ 
   const [posts, setPosts] = useState<Post[]>([]);
   useEffect(() => {
       async function fetchPosts() {
+        if(!session.data){
+          router.push('/')
+        }
           try {
               const response = await fetch('/api/post');
-              const postData=await response.json();
-              console.log(postData);
-              
+              const postData=await response.json();   
               setPosts(postData)
           } catch (error) {
               console.log("Error fetching posts:", error);
@@ -37,7 +36,9 @@ export default  function Page(): JSX.Element{
       }
       fetchPosts();
       
+      
   }, []);
+
 
 
   return (
